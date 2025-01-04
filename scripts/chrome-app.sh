@@ -13,7 +13,7 @@ URL="$1"
 PROFILE_NAME="$2"
 
 # Check if a browser with the given URL is running
-BROWSER=$(xdotool search --classname "$(basename $NOTION_URL)")
+BROWSER=$(xdotool search --classname "$(basename $URL)")
 
 if [ -n "$BROWSER" ]; then
     # Focus the existing browser tab
